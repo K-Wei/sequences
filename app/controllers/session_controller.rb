@@ -8,7 +8,7 @@ class SessionController < ApplicationController
 
   def try
 
-    @num1, @num2, @num3 = params[:first_number], params[:second_number], params[:third_number]
+    @num1, @num2, @num3 = params[:first_number].to_i, params[:second_number].to_i, params[:third_number].to_i
 
 
     if @num1 == nil || @num2 == nil || @num3 == nil
